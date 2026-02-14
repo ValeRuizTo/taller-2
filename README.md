@@ -33,17 +33,17 @@ Elaborar un modelo ER limpio y un diagrama de contexto ajustado.
 Redactar un informe explicando las decisiones tomadas.
 Complementar con una investigación sobre ERD y contexto en casos reales de la industria.
 ## 📁 Estructura esperada del repositorio
-taller-02-modelo-informacion/
-├── README.md
-├── clase/
-│   ├── modelo-er-borrador.drawio
-│   ├── contexto-borrador.drawio
-│   └── notas.md
-├── entrega/
-│   ├── modelo-final-er.drawio
-│   ├── diagrama-contexto-final.drawio
-│   ├── informe.md
-│   └── referencias.md
+    taller-02-modelo-informacion/
+    ├── README.md
+    ├── clase/
+    │   ├── modelo-er-borrador.drawio
+    │   ├── contexto-borrador.drawio
+    │   └── notas.md
+    ├── entrega/
+    │   ├── modelo-final-er.drawio
+    │   ├── diagrama-contexto-final.drawio
+    │   ├── informe.md
+    │   └── referencias.md
 ## 📤 Entregables
 Modelo ER final (modelo-final-er.drawio)
 Diagrama de contexto final (diagrama-contexto-final.drawio)
