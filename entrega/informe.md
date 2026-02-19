@@ -27,10 +27,20 @@ Incluya un análisis sobre:
 > (Inserte aquí una imagen o enlace al modelo-final.drawio / .asta / PDF)
 
 ## 📋 Tabla de actores, entidades o componentes (si aplica)
+| Nombre del elemento  | Tipo    | Descripción                                                                     | Responsable     |
+| -------------------- | ------- | ------------------------------------------------------------------------------- | --------------- |
+| Cliente              | Actor   | Persona que solicita el servicio mecánico y realiza el pago                     | Cliente         |
+| Empleado             | Actor   | Trabajador del taller que gestiona solicitudes, órdenes de compra y facturación | Taller/empresa |
+| Proveedor            | Actor   | Empresa o persona que suministra las piezas al taller                           | Proveedor       |
+| Solicitud_servicio   | Entidad | Registro del diagnóstico o servicio solicitado por el cliente                   | Empleado        |
+| Pieza                | Entidad | Producto o repuesto utilizado en reparaciones o vendido al cliente              | Taller/empresa |
+| Orden_compra         | Entidad | Documento que registra la solicitud de piezas al proveedor                      | Empleado        |
+| Orden_compra_detalle | Entidad | Detalle de las piezas incluidas en una orden de compra                          | Empleado        |
+| Recepcion_piezas     | Entidad | Registro de la recepción de piezas solicitadas al proveedor                     | Empleado        |
+| Factura              | Entidad | Documento que registra el cobro del servicio y piezas al cliente                | Empleado        |
+| Factura_detalle      | Entidad | Detalle de las piezas o servicios incluidos en la factura                       | Empleado        |
+| Pago                 | Entidad | Registro del pago realizado por el cliente                                      | Cliente         |
 
-| Nombre del elemento | Tipo | Descripción | Responsable |
-|---------------------|------|-------------|-------------|
-| Ej: Paciente        | Actor | Usuario que agenda una cita médica | Cliente |
 
 ## 🔍 Investigación complementaria
 ### Tema investigado:
