@@ -34,8 +34,14 @@ Se definieron las entidades principales con sus relaciones básicas:
   - dSe elaboró un primer borrador del diagrama de contexto de negocio con actores, sistemas y principales flujos de información.
 
 ## 🧩 Boceto inicial del modelo
+- Modelo Entidad Relacion
+  <img width="837" height="668" alt="image" src="https://github.com/user-attachments/assets/3a154250-427d-4d23-b6ef-f46db3c7ec56" />
+  
+- Diagrama Entidad Relacion
+<img width="1010" height="658" alt="image" src="https://github.com/user-attachments/assets/989ef95f-d029-49f7-bd61-6d155553208f" />
 
-> (Puede insertar aquí una imagen del boceto, una captura de pantalla o un diagrama preliminar si ya fue hecho en digital)
+-Modelo de negocio Inicial 
+<img width="896" height="454" alt="image" src="https://github.com/user-attachments/assets/d0b29f2e-141c-471a-b2ab-d1a637f30a97" />
 
 ## 🔁 Tareas definidas para complementar el taller
 
