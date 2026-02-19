@@ -15,13 +15,75 @@ La actividad se desarrolló inicialmente analizando el caso base, identificando 
 
 ---
 ## 🔧 Proceso de desarrollo
-Explique cómo realizaron el trabajo: qué decisiones tomaron, qué herramientas utilizaron, qué aspectos modelaron primero y cómo lo fueron ajustando.
-re
+El desarrollo del modelo se realizó siguiendo una metodología estructurada basada en el análisis de procesos y posterior modelado de datos.
+
+En primer lugar, se identificó el problema principal de la empresa: la ausencia de un sistema formal para el control de inventario. Actualmente, el inventario se gestiona de manera visual, revisando físicamente la bodega, lo que genera riesgos como desabastecimiento, sobrecompra y falta de trazabilidad.
+
+Posteriormente, se modeló el proceso actual mediante un diagrama BPMN, lo cual permitió identificar:
+
+- Actores involucrados (cliente, empleado, proveedor).
+- Eventos clave (solicitud de pieza, compra, recepción, facturación).
+- Puntos de decisión (existencia o no de repuesto en inventario).
+
+Una vez definido el flujo del proceso, se procedió a transformar los elementos persistentes del BPMN en entidades del modelo entidad-relación (ERD). Para ello, se aplicaron los siguientes criterios:
+
+1. Los actores que requieren almacenamiento de información se modelaron como entidades (Cliente, Empleado, Proveedor).
+2. Los eventos que generan registros históricos se modelaron como entidades (Orden_compra, Factura, Recepcion_piezas, Pago).
+3. Las relaciones de tipo uno-a-muchos fueron resueltas mediante tablas intermedias (Orden_compra_detalle, Factura_detalle).
+4. Se decidió integrar el control de stock dentro de la entidad Pieza, evitando crear una entidad Inventario independiente, dado que el alcance actual no contempla múltiples bodegas ni trazabilidad avanzada.
+   
 ## 🧩 Análisis del modelo propuesto
 Incluya un análisis sobre:
 - Cómo se estructura el modelo entregado
+El modelo se compone de once entidades principales:
+
+Cliente, Empleado, Pieza, Solicitud_servicio, Proveedor, Orden_compra, Orden_compra_detalle, Recepcion_piezas, Factura, Factura_detalle, Pago
+
+* Gestión de servicios
+
+Cliente → Solicitud_servicio → Factura → Pago
+
+* Gestión de compras a proveedor
+
+Proveedor → Orden_compra → Orden_compra_detalle → Recepcion_piezas
+
+* Gestión de inventario
+
+Pieza (incluye stock_actual y stock_minimo)
+
 - Cómo representa las necesidades del cliente
+
+El modelo responde directamente al Problema de que la empresa no cuenta con un registro formal de inventario.
+
+La entidad Pieza incorpora atributos como:
+
+- stock_actual y stock_minimo
+
+Esto permite:
+
+- Conocer en tiempo real la cantidad disponible de cada repuesto.
+- Generar alertas cuando el stock llegue a un nivel mínimo.
+- Evitar la revisión manual de la bodega.
+- Vincular automáticamente el inventario con el proceso de compra y facturación.
+
+Además, al integrar Orden_compra y Recepcion_piezas, el sistema permite:
+
+- Registrar cuándo se solicita un repuesto.
+- Registrar cuándo se recibe.
+- Actualizar el stock de forma estructurada.
+
+De esta manera, el modelo transforma un control empírico en un control sistemático y trazable.
+
 - Qué supuestos se tomaron
+  
+Para delimitar el alcance del modelo se asumieron los siguientes supuestos:
+1. La empresa cuenta con una sola bodega física.
+2. Cada solicitud de servicio genera una única factura.
+3. Una orden de compra puede incluir múltiples piezas.
+4. Las recepciones pueden asociarse a una orden de compra.
+5. No se modeló trazabilidad histórica de movimientos de inventario, únicamente el stock actual.
+6. No se abordó el sistema de agendamiento (Problema #2), ya que el enfoque del proyecto es el control de inventario.
+
 
 ## 📈 Diagrama final entregado
 > (Inserte aquí una imagen o enlace al modelo-final.drawio / .asta / PDF)
