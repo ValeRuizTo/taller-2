@@ -109,17 +109,18 @@ Modelo Entidad-Relación en la industria y Diagramas de Contexto bajo el enfoque
 
 ### Resumen:
 
-El Modelo Entidad-Relación (ER), introducido por Peter Chen en 1976, continúa siendo una herramienta fundamental para el modelado conceptual de datos en sistemas empresariales. En la práctica industrial, suele utilizarse notación Crow’s Foot por su claridad al representar cardinalidades y dependencias entre entidades. Este tipo de modelado permite alinear los requerimientos del negocio con la estructura de información antes de su implementación técnica.
+Se investigaron las buenas prácticas en el uso de BPMN, estándar definido por el Object Management Group (OMG), el cual establece lineamientos para modelar procesos de negocio de manera clara y estructurada. Entre las principales recomendaciones se encuentran mantener un nivel adecuado de detalle, diferenciar correctamente los actores mediante pools y lanes, y representar claramente los puntos de decisión. Estas prácticas permiten que los diagramas sean comprensibles tanto para usuarios del negocio como para desarrolladores.
 
-Por otra parte, los Diagramas de Contexto han evolucionado en marcos modernos como el C4 Model, donde el nivel "System Context" describe cómo un sistema interactúa con usuarios y sistemas externos. Este enfoque facilita la comunicación entre áreas técnicas y de negocio al enfocarse en flujos de información y responsabilidades, sin entrar en detalles de infraestructura o implementación.
+También se revisaron principios de normalización en modelos Entidad-Relación, basados en los estudios de Edgar F. Codd. La Tercera Forma Normal (3FN) busca reducir redundancias y garantizar integridad en la base de datos. Esto se aplicó en el taller mediante la creación de tablas detalle para representar relaciones uno-a-muchos, asegurando un modelo coherente y estructurado.
 
 En el sector salud, estándares como HL7 FHIR demuestran cómo entidades como "Appointment" (Cita) deben estructurarse para permitir interoperabilidad entre plataformas clínicas y aseguradoras. Esto evidencia la importancia de un modelo conceptual sólido que pueda escalar hacia integraciones reales.
 
 ---
 
 ## 📚 Referencias
-- [1] Apellido, Nombre. *Título*. Año. URL o DOI.
-- [2] Fuente oficial BPMN: https://www.omg.org/spec/BPMN/
+- [1] Object Management Group (2011). Business Process Model and Notation (BPMN) 2.0.
+- [2] Codd, E. F. (1970). A Relational Model of Data for Large Shared Data Banks.
+
 
 ---
 
