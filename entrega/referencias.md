@@ -9,8 +9,8 @@ _Taller 2 - Modelo de Información y Diagrama de Contexto
 
 ## 📚 Referencias utilizadas
 
-1.Object Management Group (2011). Business Process Model and Notation (BPMN) 2.0.
-Codd, E. F. (1970). A Relational Model of Data for Large Shared Data Banks.
+1. Object Management Group (2011). Business Process Model and Notation (BPMN) 2.0.
+2. Codd, E. F. (1970). A Relational Model of Data for Large Shared Data Banks.
 
 ---
 
