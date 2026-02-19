@@ -33,9 +33,8 @@ Una vez definido el flujo del proceso, se procedió a transformar los elementos 
 4. Se decidió integrar el control de stock dentro de la entidad Pieza, evitando crear una entidad Inventario independiente, dado que el alcance actual no contempla múltiples bodegas ni trazabilidad avanzada.
    
 ## 🧩 Análisis del modelo propuesto
-Incluya un análisis sobre:
-- Cómo se estructura el modelo entregado
-El modelo se compone de once entidades principales:
+
+### Cómo se estructura el modelo entregado
 
 Cliente, Empleado, Pieza, Solicitud_servicio, Proveedor, Orden_compra, Orden_compra_detalle, Recepcion_piezas, Factura, Factura_detalle, Pago
 
@@ -51,7 +50,7 @@ Proveedor → Orden_compra → Orden_compra_detalle → Recepcion_piezas
 
 Pieza (incluye stock_actual y stock_minimo)
 
-- Cómo representa las necesidades del cliente
+### Cómo representa las necesidades del cliente
 
 El modelo responde directamente al Problema de que la empresa no cuenta con un registro formal de inventario.
 
@@ -74,7 +73,7 @@ Además, al integrar Orden_compra y Recepcion_piezas, el sistema permite:
 
 De esta manera, el modelo transforma un control empírico en un control sistemático y trazable.
 
-- Qué supuestos se tomaron
+### Qué supuestos se tomaron
   
 Para delimitar el alcance del modelo se asumieron los siguientes supuestos:
 1. La empresa cuenta con una sola bodega física.
