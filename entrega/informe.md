@@ -88,6 +88,10 @@ Para delimitar el alcance del modelo se asumieron los siguientes supuestos:
 
 ![.](entrega/diagrama-entidad-relacion.drawio.png)
 
+![.](entrega/modelo-entidad-relacion.drawio.png)
+
+
+
 
 ## 📋 Tabla de actores, entidades o componentes (si aplica)
 | Nombre del elemento  | Tipo    | Descripción                                                                     | Responsable     |
