@@ -86,7 +86,7 @@ Para delimitar el alcance del modelo se asumieron los siguientes supuestos:
 
 ## 📈 Diagrama final entregado
 
-![.](entrega/diagrama entidad relacion.drawio.png)
+![.](entrega/diagramaentidadrelacion.drawio.png)
 
 
 ## 📋 Tabla de actores, entidades o componentes (si aplica)
