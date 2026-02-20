@@ -86,9 +86,9 @@ Para delimitar el alcance del modelo se asumieron los siguientes supuestos:
 
 ## 📈 Diagrama final entregado
 
-![.](entrega/diagrama-entidad-relacion.drawio.png)
+![.](diagrama-entidad-relacion.drawio.png)
 
-![.](entrega/modelo-entidad-relacion.drawio.png)
+![.](modelo-entidad-relacion.drawio.png)
 
 
 
