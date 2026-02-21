@@ -40,8 +40,8 @@ Se definieron las entidades principales con sus relaciones básicas:
 - Diagrama Entidad Relacion
 <img width="1010" height="658" alt="image" src="https://github.com/user-attachments/assets/989ef95f-d029-49f7-bd61-6d155553208f" />
 
--Modelo de negocio Inicial 
-<img width="896" height="454" alt="image" src="https://github.com/user-attachments/assets/d0b29f2e-141c-471a-b2ab-d1a637f30a97" />
+- Diagrama de contexto
+<img width="1096" height="689" alt="image" src="https://github.com/user-attachments/assets/dbf2af0c-3fa0-456f-a4d8-b3be4a72645a" />
 
 ## 🔁 Tareas definidas para complementar el taller
 
