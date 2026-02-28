@@ -88,7 +88,7 @@ Para delimitar el alcance del modelo se asumieron los siguientes supuestos:
 
 ![.](Diagrama-entidad-relacion.drawio.png)
 
-![.](Modelo-entidad-relacion.drawio.png)
+![.](Modelo-Entidad-Relacion.drawio.png)
 
 Diagrama Contexto Final
 
